@@ -1,68 +1,126 @@
 <html>
+
 <head>
-<title>
-Login page
-</title>
+  <title>Login page</title>
 </head>
-<body>
-<h1 style="font-family:Comic Sans Ms;text-align="center";font-size:20pt;
-color:#00FF00;>
-Simple Login Page
-</h1>
-<form name="login">
-Uername<input type="text" name="userid" value="">
-Password<input type="password" name="pswrd"/>
-<input type="button" onclick="check(this.form)" value="Login"/>
-<input type="reset" value="Cancel"/>
-</form>
-<script language="javascript">
-function check(form)/*function to check userid & password*/
-{
- /*the following code checkes whether the entered userid and password are matching*/
- if(form.userid.value == "niranjan" && form.pswrd.value == "niranjan123")
-  {
-alert("login successful")
-    window.open('first.html')/*opens the target page while Id & password matches*/
-	
-  
-}
- else
- {
-   alert("Error Password or Username")/*displays error message*/
+
+<style>
+  body {
+    align-content: center;
+    background-color: bisque;
   }
-}
-</script>
-<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selenium&nbsp;</div>
 
-<table>
-<thead>
-<h1>Independent and dependent</h1>
-</thead>
-<tbody>
-<tr>
-<td>java</td>
-<td>511</td>
-</tr>
-<tr>
-<td>ruby</td>
-<td>5527</td>
-</tr>
-<tr>
-<td>selenium</td>
-<td>1225</td>
-</tr>
+  h1 {
+    font-family: Comic Sans Ms;
+    text-align: center;
+    font-size: 20pt;
+    color: #00a2ff;
+  }
 
-</tbody>
-</table>
+  form {
+    align-self: center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: darkgoldenrod;
+    width: 30px;
+  }
 
-		<div>
-        <input type="text" value="A">
-        <input type="text" value="B">
- </div>
+  input {
+    border-color: aquamarine;
+  }
+
+  .login {
+    border: 3px solid darkgrey;
+    height: 25px;
+    width: 80px;
+    color: blue;
+    position: relative;
+  }
+
+  .reset {
+    background-color: aqua;
+    color: red;
+    position: relative;
+    /* font-family: fantasy; */
+    /* height: 25px; */
+    /* width: 80px;
+    margin: auto; */
+    border: 3px solid #73AD21;
+    left: 90px;
+    bottom: 25px;
+  }
+
+  .logbutton {
+    padding: 10px 5px;
+  }
+</style>
+
+
+<body>
+  <h1>Simple Login Page</h1>
+
+  <!-- <div ">
+    Uername<input type="text" name="userid" value="" /> Password<input type="password" name="pswrd" />
+    <input type="button" onclick="check(this.form)" value="Login" />
+    <input type="reset" value="Cancel" />
+  </div> -->
+  <form name=login>
+    Username<input type="text" name="userid" value="" />
+    Password<input type="password" name="pswrd" />
+    <div class="logbutton">
+      <input class="login" type="button" onclick="check(this.form)" value="Login" />
+      <input class="reset" type="reset" value="Cancel" />
+    </div>
+
+
+  </form>
+  <script language="javascript">
+    function check(form) /*function to check userid & password*/ {
+      /*the following code checkes whether the entered userid and password are matching*/
+      if (
+        form.userid.value == "niranjan" &&
+        form.pswrd.value == "niranjan123"
+      ) {
+        alert("login successful");
+        window.open(
+          "first.html"
+        ); /*opens the target page while Id & password matches*/
+      } else {
+        alert("Error Password or Username"); /*displays error message*/
+      }
+    }
+  </script>
+  <!-- <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selenium&nbsp;</div>
+
+  <table>
+    <thead>
+      <h1>Independent and dependent</h1>
+    </thead>
+    <tbody>
+      <tr>
+        <td>java</td>
+        <td>511</td>
+      </tr>
+      <tr>
+        <td>ruby</td>
+        <td>5527</td>
+      </tr>
+      <tr>
+        <td>selenium</td>
+        <td>1225</td>
+      </tr>
+    </tbody>
+  </table>
+
   <div>
-        <input type="text" value="C">
-        <input type="text" value="D">
- </div>
-
+    <input type="text" value="A" />
+    <input type="text" value="B" />
+  </div>
+  <div>
+    <input type="text" value="C" />
+    <input type="text" value="D" />
+  </div> -->
 </body>
+
 </html>
